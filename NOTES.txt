@@ -1,0 +1,19 @@
+Methods 86'ed from app.js
+
+function aFunThing ( a, b) {
+    if (a.somethingelse < b.another) {
+        return 1;
+    } else if (a.somethingelse > b.another) {
+        return -1;
+    } else {
+        return 0;
+    }
+
+    //maybe 86 this & replace with method above
+            for (data of data){
+                <div class="card-main">
+                    <td> ${data.something}</td>
+                    <section> ${data.somethingelse.join(',')}</section>
+                </div>
+            }
+            container.innerHTML += `<legend> Total this month: ${another.total} ${another.percentage}from last month</legend>`

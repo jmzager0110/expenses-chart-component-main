@@ -3,46 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 <main>
-  <div class="card-header">
+  <section class="card-header">
     <p>My balance</p>
     <span>$921.48</span>
-  </div>
-  <div class="card-main">
-    <table>
-      <thead><h1>Spending - Last 7 days</h1></thead>
+  </section>
+  <section class="card-main">
+    <table id="tableID"><caption>Spending - Last 7 days</caption>
+      <thead>          
+        <tr>
+          <th scope="col" class="day">mon</th>
+        </tr>
+        <tr>
+          <th scope="col" class="day">tues</th>
+        </tr>
+        <tr>
+          <th scope="col" class="day">wed</th>
+        </tr>
+        <tr>
+          <th scope="col" class="day">thurs</th>
+        </tr>
+        <tr>
+          <th scope="col" class="day">fri</th>
+        </tr>
+        <tr>
+          <th scope="col" class="day">sat</th>
+        </tr>
+        <tr>
+          <th scope="col" class="day">sun</th>
+        </tr>
+      </thead>
       <tbody>
-        <tr>mon</tr>
-          <tr>tue</tr>
-          <tr>wed</tr>
-          <tr>thurs</tr>
-          <tr>fri</tr>
-          <tr>sat</tr>
-          <tr>sun</tr>
+        <tr>
+          <td>
+            <span class="data">
+              <div class="amount"></div>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="data">
+              <div class="amount"></div>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="data">
+              <div class="amount"></div>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <tr>
+            <td>
+              <span class="data">
+                <div class="amount"></div>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="data">
+                <div class="amount"></div>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="data">
+                <div class="amount"></div>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="data">
+                <div class="amount"></div>
+              </span>
+            </td>
+          </tr>
       </tbody>
     </table>
-    <legend><p>  Total this month
-      $478.33
-    
-      +2.4%
-      from last month</p></legend>
-  </div>
+    <legend> Total this month $478.33 +2.4% from last month</legend>
+  </section>
 </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Miniature Jay-Z</a>.
   </div>
 </body>
 </html>

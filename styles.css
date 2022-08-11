@@ -1,0 +1,56 @@
+@import url(href=https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap);
+
+:root{
+
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --med-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+
+}
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--cream);
+}
+
+
+.card-header{
+    display: block;
+    background-color: var(--very-pale-orange);
+    color: whitesmoke;
+}
+caption{
+    display: inline;
+}
+
+#tableID{
+    display: block;
+    color: var(--dark-brown);
+
+}
+
+.day
+
+.data 
+
+.amount
+
+legend{
+    display: block;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
