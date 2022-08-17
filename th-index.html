@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js"></script>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Frontend Mentor | Expenses chart component</title>
+      </head>
+<body>
+    <section class="card-header">
+        <p>My balance</p>
+        <span>$921.48</span>
+      </section>
+      <section class="card-main">
+        <table id="tableID" class="data"><caption>Spending - Last 7 days</caption>
+          <thead>
+          <th:block th: block th:each="heading : ${data.get(0).day()}">          
+            <tr th:text="${day}">
+              <th scope="col" class="day"></th>
+            </tr>
+            </th:block>
+          </thead>
+          <tbody class="container">
+            <tr class="amount" th:each="item : ${data}">
+                  <th:block th:each="amount : ${data.amount()}">
+                      <td th:text="${item.get(amount)}"></td>
+                  </th:block>
+            </tr>
+        </tbody>
+    </table>
+    <legend> Total this month $478.33 +2.4% from last month</legend>
+  </section>
+</body>
+</html>

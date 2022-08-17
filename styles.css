@@ -1,4 +1,4 @@
-@import url(href=https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
 :root{
 
@@ -8,49 +8,50 @@
     --med-brown: hsl(28, 10%, 53%);
     --cream: hsl(27, 66%, 92%);
     --very-pale-orange: hsl(33, 100%, 98%);
+    --reg-font-size: 18px;
 
-}
-*,
-::before,
-::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 *{
     min-height: 100vh;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;    
+}
+
+.container{
+    display: block;
     background-color: var(--cream);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .card-header{
-    display: block;
-    background-color: var(--very-pale-orange);
+    background-color: var(--soft-red);
     color: whitesmoke;
+    display: flex;
+    flex-flow: row;
+    border-radius: 20%;
+    margin-bottom: 15px;
 }
-caption{
-    display: inline;
-}
+
 
 #tableID{
-    display: block;
+    background-color: white;
     color: var(--dark-brown);
-
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.day
-
-.data 
-
-.amount
-
-legend{
-    display: block;
+.table-body-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.day, .amount{
+    display: flex;
+    flex-flow: column;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
