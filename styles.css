@@ -9,6 +9,7 @@
     --cream: hsl(27, 66%, 92%);
     --very-pale-orange: hsl(33, 100%, 98%);
     --reg-font-size: 18px;
+    --balance-font-size: 32px;
 
 }
 
@@ -35,6 +36,8 @@
     margin-bottom: 15px;
 }
 
+.balance
+
 
 #tableID{
     background-color: white;
@@ -42,6 +45,8 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+.table-heading
 
 .table-body-container{
     display: flex;

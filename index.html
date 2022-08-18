@@ -7,38 +7,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <script src="app.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body>
 <main class="container">
+  <section class="card-header">
+    <p>My balance</p>
+    <p><span class="balance">$921.48</span></p>
+  </section>
   <div class="card-main">
-    <table id="tableID" class="data"><caption>Spending - Last 7 days</caption>
-      <caption>  
-        <div class="card-header">
-        <p>My balance</p>
-        <span>$921.48</span>
-      </div></caption>
+    <table id="tableID" class="data">
       <thead>          
         <tr>
-          <th scope="column" class="day">mon</th>
+          <th scope="colgroup" class="table-heading">Spending - Last 7 days</th>
         </tr>
       </thead>
       <tbody class="table-body-container">
         <tr>
-          <td>
-              <div class="amount">placeholder</div>
-          </td>
+          <td scope="row" class="amount">${data.amount}</td>
+          <th scope="row" class="day">Day</td>
+          <td scope="row" class="amount">${data.amount}</td>
+          <th scope="row" class="day">Day</td>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <td>Total this month $478.33 +2.4% from last month</td>
-        </tr>
-      </tfoot>
+      <tfoot><tr><td></td></tr></tfoot>
     </table>
-  </div> 
+  </div>
+  <section class="total">Totals text goes here</section> 
 </main>
 <footer>
   <p class="attribution">
