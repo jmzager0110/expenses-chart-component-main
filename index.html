@@ -12,35 +12,31 @@
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body>
-<main class="container">
-  <section class="card-header">
-    <p>My balance</p>
-    <p><span class="balance">$921.48</span></p>
-  </section>
-  <div class="card-main">
-    <table id="tableID" class="data">
-      <thead>          
-        <tr>
-          <th scope="colgroup" class="table-heading">Spending - Last 7 days</th>
-        </tr>
-      </thead>
-      <tbody class="table-body-container">
-        <tr>
-          <td scope="row" class="amount">${data.amount}</td>
-          <th scope="row" class="day">Day</td>
-          <td scope="row" class="amount">${data.amount}</td>
-          <th scope="row" class="day">Day</td>
-        </tr>
-      </tbody>
-      <tfoot><tr><td></td></tr></tfoot>
-    </table>
+<div class="container">
+  <div class="card-header">
+    <p class="balance-text">My balance</p>
+    <h3 class="balance-amount">$921.48</h3>
+    <div class="circle">
+      <!--TODO-->
+    </div>
   </div>
-  <section class="total">Totals text goes here</section> 
-</main>
+</div>
+<section class="main-area">
+  <p class="chart-title">Spending - Last 7 days</p>
+  <div id="chart">
+    <!--data-->
+  </div>
+  <div class="chart-footer">
+  <p class="total-left">Total this month</p>
+  <h3 class="total-left-amount">$478.33</h3>
+  <h3 class="total-right-amount">+2.4%</h3>
+  <p class="total-right">from last month</p>
+  </div>
+</section>
 <footer>
   <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded byMiniature Jay-Z.
+    Coded by Miniature Jay-Z.
   </p>
 </footer>
 </body>

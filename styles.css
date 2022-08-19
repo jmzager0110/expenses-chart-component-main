@@ -18,12 +18,18 @@
     font-family: 'DM Sans', sans-serif;    
 }
 
-.container{
-    display: block;
+body{
+    display: flex;
     background-color: var(--cream);
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    transition: 0.7s;
+}
+
+.container{
+    width: 30%;
+    height: 60%;
 }
 
 
@@ -31,32 +37,77 @@
     background-color: var(--soft-red);
     color: whitesmoke;
     display: flex;
-    flex-flow: row;
-    border-radius: 20%;
-    margin-bottom: 15px;
+    border-radius: 10%;
+    justify-content: space-between;
+    padding: 20px 40px 15px 30px;
+
 }
 
-.balance
+.balance-text,
+.balance-amount{
+    color: white;
+}
+
+.balance-text{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.circle
 
 
-#tableID{
-    background-color: white;
+.main-area{
+    background-color: var(--very-pale-orange);
     color: var(--dark-brown);
-    display: flex;
-    flex-flow: row wrap;
+    height: 80%;
+    padding: 30px;
+    border-radius: 20px;
 }
 
-.table-heading
 
-.table-body-container{
-    display: flex;
-    flex-wrap: wrap;
+.chart-title{
+    font-size: 1.7rem;
+    color: var(--dark-brown);
+    font-weight: 700;
 }
+
+#chart{
+    height: 65%;
+    border-bottom: 1px solid var(--cyan);
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+#charts-child
+#day
+#amount
 
 .day, .amount{
     display: flex;
     flex-flow: column;
 }
+
+.chart-footer{
+    color: var(--dark-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.total-left,
+.total-left-amount{
+    justify-content: left;
+}
+
+.total-right-amount,
+.total-right{
+    justify-content: right;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

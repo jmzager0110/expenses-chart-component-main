@@ -86,10 +86,11 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Useful resources
 
-- [This Solution](https://github.com/dheysonalves/expenses-chart-component) was interesting because it has no js file at all, their script is just within their index file
+- [This Solution](https://github.com/dheysonalves/expenses-chart-component) - was interesting because it has no js file at all, their script is just within their index file
 - [Another Solution](https://github.com/JonKohJJ/Expenses-Chart-Component) - used an async function in their js file and only divs in their index file
+- [Yet Another Solution](https://github.com/sumyat-aung/expenses-chart-component) - is described as responsive
 - [This CodePen](https://codepen.io/davidelrizzo/full/dGBpZK/) - is a great example of Table Markup Best Practice
-- [Another Solution](Expenses-chart-component---Frontend-Mentor)uses a custom table 
+- [Another Solution](Expenses-chart-component---Frontend-Mentor) - uses a custom table 
 
 
 ## Author

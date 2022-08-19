@@ -1,31 +1,19 @@
-function fetchData(){
-let data = await fetch('./data.json');
-let response = await response.json();
+window.addEventListener("load", function(){
+    fetch("./data.json").then(function(response){
+        response.json().then( function (json) {
+            let container = document.getElementById("chart");
+            let numbers = json;
+            
+            for (number of numbers) {
+                container.innerHTML += `
+                  <p class="amount">${number.amount}</p>
+                  <p class="day">${number.day}</p>
+            ` 
+          };
+            
+        })
 
-    for (data of datas) {
-        container.innerHTML += ` <table class="data"><caption>Spending - Last 7 days</caption>
-        <caption>  
-          <div class="card-header">
-          <p>My balance</p>
-          <span>$921.48</span>
-        </div></caption>
-        <thead>          
-            <tr>
-            <th scope="column" class="day">${response.day}</th>
-            </tr>
-      </thead>
-      <tbody class="table-body-container">
-        <tr>
-          <td>
-              <div class="amount">${response.amount}</div>
-          </td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td class="total">${response.total}</td>
-        </tr>
-      </tfoot>
-    </table> ` 
-  };
-}
+    })
+
+
+})

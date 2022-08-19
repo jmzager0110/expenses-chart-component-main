@@ -66,3 +66,23 @@
       <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
     </g>
     </svg>
+
+
+    ________
+    index stuff that should be in the script file instead:
+      <div class="card-main">
+      <table id="tableID" class="data">
+      <thead>          
+        <tr>
+          <th scope="colgroup" class="table-heading">Spending - Last 7 days</th>
+        </tr>
+      </thead>
+      <tbody class="table-body-container">
+        <tr>
+          <td scope="row" class="amount">${response.amount}</td>
+          <th scope="row" class="day">${response.day}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <section class="total">Totals text goes here</section> 
