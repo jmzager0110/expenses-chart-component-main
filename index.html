@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Expenses chart component</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body>
-<div class="container">
-  <div class="card-header">
-    <p class="balance-text">My balance</p>
-    <h3 class="balance-amount">$921.48</h3>
-    <div class="circle">
-      <!--TODO-->
-    </div>
+  <div class="container">
+    <!--Balance info card-->
+    <section class="card">
+      <p class="balance-text">My balance</p>
+      <h3 class="balance-amount">$921.48</h3>
+        <div class="circle">
+          <!--TODO-->
+       </div>
+    </section>
+
+
+    <!--Chart area-->
+    <section class="chart-area">
+        <p class="chart-title">Spending - Last 7 days</p>
+      <div id="chart">
+      <!--data-->
+      </div>
+      <div class="chart-footer">
+        <div class="left">
+        <p class="total-left">Total this month</p>
+        <h3 class="total-left-amount">$478.33</h3>
+      </div>
+      <div class="right">
+        <p class="total-right-amount">+2.4%</p>
+        <p class="total-right">from last month</p>
+      </div>
+      </div>
+    </section>
   </div>
-</div>
-<section class="main-area">
-  <p class="chart-title">Spending - Last 7 days</p>
-  <div id="chart">
-    <!--data-->
-  </div>
-  <div class="chart-footer">
-  <p class="total-left">Total this month</p>
-  <h3 class="total-left-amount">$478.33</h3>
-  <h3 class="total-right-amount">+2.4%</h3>
-  <p class="total-right">from last month</p>
-  </div>
-</section>
-<footer>
-  <p class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by Miniature Jay-Z.
-  </p>
-</footer>
+  <footer><p class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by Miniature Jay-Z.</p>
+  </footer>
 </body>
 </html>

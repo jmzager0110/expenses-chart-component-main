@@ -6,7 +6,7 @@ window.addEventListener("load", function(){
             
             for (number of numbers) {
                 container.innerHTML += `
-                  <p class="amount">${number.amount}</p>
+                  <p class="amount">$${number.amount}</p>
                   <p class="day">${number.day}</p>
             ` 
           };
