@@ -91,6 +91,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - [Yet Another Solution](https://github.com/sumyat-aung/expenses-chart-component) - is described as responsive
 - [This CodePen](https://codepen.io/davidelrizzo/full/dGBpZK/) - is a great example of Table Markup Best Practice
 - [Another Solution](Expenses-chart-component---Frontend-Mentor) - uses a custom table 
+- [This solution](https://github.com/CarolineLienard/Expenses-Chart-Component) - uses a js method "createElement" to display the bars within the chart
 
 
 ## Author
