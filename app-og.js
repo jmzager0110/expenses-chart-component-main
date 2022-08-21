@@ -1,3 +1,5 @@
+//import{Plotly} from 'https://cdn.plot.ly/plotly-2.14.0.min.js';
+
 window.addEventListener("load", function(){
     fetch("./data.json").then(function(response){
         response.json().then( function (json) {
@@ -7,13 +9,47 @@ window.addEventListener("load", function(){
             
             for (number of numbers) {
                 container.innerHTML += `
-                  <p class="amount">$${number.amount}</p>
                   <p class="day">${number.day}</p>
+                  <p class="amount">$${number.amount}</p>
+
             ` 
             }
         });
     })
 })
+
+/* Plotly function:
+var trace1 = {
+  x: numbers.day,
+  y: numbers.amount,
+  type: 'bar',
+  //text: ,
+  marker: {
+    color: 'rgb(142,124,195)'
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'Number of Graphs Made this Week',
+  font:{
+    family: 'Raleway, sans-serif'
+  },
+  showlegend: false,
+  xaxis: {
+    tickangle: -45
+  },
+  yaxis: {
+    zeroline: false,
+    gridwidth: 2
+  },
+  bargap :0.05
+};
+
+Plotly.newPlot('chart', data, layout);*/
+
+/* Attempt at iterating to create the bars with different colors
 let highest = 0;
 let highest_day;
 let days = document.getElementsByClassName('day');
@@ -29,4 +65,4 @@ for (let i=0; i<numbers.length; i++){
       
     }
   }
-}
+}*/

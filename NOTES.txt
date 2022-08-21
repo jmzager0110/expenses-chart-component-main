@@ -1,3 +1,7 @@
+86'ed from app-og on 8/21:
+
+
+
 async function fetchData() {
     let respone = await fetchData('/data.json');
     console.log(respone);

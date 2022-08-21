@@ -92,6 +92,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - [This CodePen](https://codepen.io/davidelrizzo/full/dGBpZK/) - is a great example of Table Markup Best Practice
 - [Another Solution](Expenses-chart-component---Frontend-Mentor) - uses a custom table 
 - [This solution](https://github.com/CarolineLienard/Expenses-Chart-Component) - uses a js method "createElement" to display the bars within the chart
+- [Plotly Examples](https://plotly.com/javascript/bar-charts/#bar-chart-with-hover-text) - I decided to use this js library to at least have a "boiler plate" chart
 
 
 ## Author
