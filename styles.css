@@ -10,11 +10,9 @@
     --very-pale-orange: hsl(33, 100%, 98%);
     --reg-font-size: 18px;
     --larger-font-size: 32px;
-
 }
 
 *{
-    min-height: 100vh;
     font-family: 'DM Sans', sans-serif;    
 }
 
@@ -25,11 +23,17 @@ body{
     transition: 0.7s;
     display: flex;
     justify-content: space-around;
-    
-
 }
 
-.container
+.page-container{
+    min-height: 100vh;
+}
+
+/*This will define the footer height*/
+.content-container{
+    padding-bottom: 2.5rem;
+}
+
 /* padding & margin shorthand:
     1 value = all 4 sides,
     2 values = vertical & horizontal,
@@ -42,14 +46,15 @@ body{
     border-radius: 0.4rem;
     margin: 0.9rem auto 0.9rem;
     width: 100%;
-    max-width: 31.25rem;
-
+    max-width: 50rem;
 }
 /*86'ed from .card{    justify-self: center;
     align-self: center;}8/
 /*Try adding a seperate div for the card content & apply justify-content: space-between; align-items: center;*/
 
-.card-content
+.card-content{
+    justify-items: center;
+}
 
 .balance-text,
 .balance-amount{
@@ -69,7 +74,7 @@ body{
 }
 
 .circle-image{
-    max-width: 10%;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -112,7 +117,7 @@ col{
 
 .day{
     color: var(--dark-brown);
-    position: absolute;
+    position: relative;
     bottom: -30px;
     width: 100%;
 }
@@ -155,5 +160,5 @@ col{
 }
 
 
-.attribution { font-size: 11px; text-align: center; position: fixed; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; width: 100%; height: 2.5rem; justify-content: center;}
+.attribution a { color: var(--cyan); }

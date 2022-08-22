@@ -3,17 +3,27 @@
 window.addEventListener("load", function(){
     fetch("./data.json").then(function(response){
         response.json().then( function (json) {
-            let container = document.getElementById("chart");
+            let chart = document.getElementById("chart");
             let numbers = json;
 
             
             for (number of numbers) {
-                container.innerHTML += `
+                chart.innerHTML += `
                   <p class="day">${number.day}</p>
                   <p class="amount">$${number.amount}</p>
 
             ` 
             }
+            let day = document.getElementsByClassName("day");
+            let amount = document.getElementsByClassName("amount");
+            /*iterate through amounts then set amount[i].style.visibility = "hidden"
+            then 
+            amount.addEventListener("mouseover", function(){
+              amount[i].style.visibility = "visible"
+            })
+            amount.addEventListener("mouseleave", function(){
+              amount[i].style.visibility = "hidden"
+            })*/
         });
     })
 })

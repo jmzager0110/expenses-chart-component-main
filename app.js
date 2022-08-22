@@ -14,14 +14,14 @@ fetch("./data.json").then(function(response){
 
       function createChart(numbers) {
 
-        let amounts = document.getElementsByClassName("amount");
+        let amount = document.getElementsByClassName("amount");
             let max;
-            max = data[0].amount;
+            max = numbers[0].amount;
             for (i=0; i < numbers.length; i++) {
               if (numbers[i].amount > max) {
                 max = data[i].amount;
               }
-              amounts[i].style.visibility = "hidden";
+              amount[i].style.visibility = "hidden";
             }
             let maxHeight = max + 10;
 
@@ -31,11 +31,11 @@ fetch("./data.json").then(function(response){
               container[i].style.backgroundColor = "hsl(186, 34%, 60%)" :
               container[i].style.backgroundColor = "hsl(10, 79%, 65%)"
               container[i].addEventListener("mouseover", function(){
-                amounts[i].textContent = "$" + data[i].amount
-                amounts[i].style.visibility = "visible"
+                amount[i].textContent = "$" + data[i].amount
+                amount[i].style.visibility = "visible"
               })
               container.addEventListener("mouseleave", function(){
-                amounts[i].style.visibility = "hidden"
+                amount[i].style.visibility = "hidden"
               })
             }
 
