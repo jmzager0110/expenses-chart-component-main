@@ -19,7 +19,7 @@
       <section class="card-main">
         <table id="tableID" class="data"><caption>Spending - Last 7 days</caption>
           <thead>
-          <th:block th: block th:each="heading : ${data.get(0).day()}">          
+          <th:block th:each="heading : ${data.get(0).day()}">          
             <tr th:text="${day}">
               <th scope="col" class="day"></th>
             </tr>
