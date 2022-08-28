@@ -1,5 +1,4 @@
-//import{Plotly} from 'https://cdn.plot.ly/plotly-2.14.0.min.js';
-
+//import Plotly from 'plotly.js-dist';
 window.addEventListener("load", function(){
     fetch("./data.json").then(function(response){
         response.json().then( function (json) {
@@ -29,6 +28,7 @@ window.addEventListener("load", function(){
 })
 
 /* Plotly function:
+var Plotly = require('plotly.js-dist')
 var trace1 = {
   x: numbers.day,
   y: numbers.amount,

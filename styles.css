@@ -47,14 +47,13 @@ body{
     margin: 0.9rem auto 0.9rem;
     width: 100%;
     max-width: 50rem;
+    justify-items: center;
+    align-items: center;
 }
 /*86'ed from .card{    justify-self: center;
     align-self: center;}8/
 /*Try adding a seperate div for the card content & apply justify-content: space-between; align-items: center;*/
 
-.card-content{
-    justify-items: center;
-}
 
 .balance-text,
 .balance-amount{
@@ -64,7 +63,7 @@ body{
 .balance-text{
     font-size: var(--reg-font-size);
     font-weight: 300;
-    margin: 0;
+    margin: 0.5rem;
 }
 
 .balance-amount{
@@ -73,20 +72,23 @@ body{
     padding: 0.5rem;
 }
 
+.circle{
+    margin: 0.5rem 0.5rem auto 5rem;
+}
+
 .circle-image{
     max-width: 100%;
-    margin: auto;
 }
 
 
 .chart-area{
     background-color: var(--very-pale-orange);
     color: var(--dark-brown);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     height: 80%;
     width: auto;
     border-radius: 0.4rem;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 
@@ -97,8 +99,8 @@ body{
 }
 
 #chart{
-    border-bottom: 1px solid var(--cyan);
-    padding-bottom: 40px;
+    border-bottom: 0.063rem solid var(--cyan);
+    padding-bottom: 2.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -118,14 +120,14 @@ col{
 .day{
     color: var(--dark-brown);
     position: relative;
-    bottom: -30px;
+    bottom: -1.875rem;
     width: 100%;
 }
 
 .amount{
     color: var(--med-brown);
     position: relative;
-    bottom: 40px;
+    bottom: 2.5rem;
     width: 110%;
 
 }
@@ -135,7 +137,7 @@ col{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     height: 10%;
 }
 
@@ -151,12 +153,12 @@ col{
 
 .total-left,
 .total-right-amount{
-    bottom: 30px;
+    bottom: 1.875rem;
 }
 
 .total-left-amount,
 .total-right{
-    bottom: -30px;
+    bottom: -1.875rem;
 }
 
 
