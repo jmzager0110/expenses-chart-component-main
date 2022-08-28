@@ -27,6 +27,33 @@ window.addEventListener("load", function(){
         });
     })
 })
+/* Chart.js configuration, https://www.chartjs.org/docs/latest/charts/bar.html*/
+Chart.defaults.interaction.mode = 'nearest';
+
+const chartInteractionModeNearest  = new Chart (ctx, {
+  type: 'bar',
+  data: numbers,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  },
+  plugins: []
+});
+const labels = Utils.day({count: 7});
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'Title Goes Here',
+    data: numbers.amount,
+    backgroundColor: [
+      'rgba()',
+    ],
+
+  }]
+}
 
 /* Plotly function:
 var trace1 = {
