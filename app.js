@@ -1,45 +1,27 @@
-fetch("./data.json").then(function(response){
-  response.json().then( function (json) {
-      let container = document.getElementById("chart");
-      let numbers = json;
-  })
+const data = fetch('https://raw.githubusercontent.com/jmzager0110/expenses-chart-component-main/master/data.json').then(response => response.json()).then(data => {
+  console.log(data);
+  return data;
 })
+.catch(error => console.log(error));
 
-//TODO: 
-//1. add function to create bars (with clickable area), 
-//2. & apply different style to highest
-//3. Then another function for active state, 
-//4. meaning on click is the only time the amounts are displayed
-//   or is it hover?
-
-      function createChart(numbers) {
-
-        let amount = document.getElementsByClassName("amount");
-            let max;
-            max = numbers[0].amount;
-            for (i=0; i < numbers.length; i++) {
-              if (numbers[i].amount > max) {
-                max = data[i].amount;
-              }
-              amount[i].style.visibility = "hidden";
-            }
-            let maxHeight = max + 10;
-
-            for (let i=0; i < numbers.length; i++){
-              container[i].style.height = `${numbers[i].amount / maxHeight * 115}px`;
-              numbers[i].amount == max ?
-              container[i].style.backgroundColor = "hsl(186, 34%, 60%)" :
-              container[i].style.backgroundColor = "hsl(10, 79%, 65%)"
-              container[i].addEventListener("mouseover", function(){
-                amount[i].textContent = "$" + data[i].amount
-                amount[i].style.visibility = "visible"
-              })
-              container.addEventListener("mouseleave", function(){
-                amount[i].style.visibility = "hidden"
-              })
-            }
-
-
-
-
-      }
+let chart = document.getElementById('chart');
+data.then(data => {
+  data.forEach(item => {
+    let chartChart = document.createElement('div');
+    chart.classList.add('chartChart');
+    const height = item.amount / 7;
+    let value = "";
+    if (item.day == "wed") {
+      value=`<div class="chart-value active" style="--height:${height}em"></div>`;
+    } else {
+      value=`<div class="chart-value" style="--height:${height}em"></div>`;
+    }
+    chartChart.innerHTML = `
+    <div class="chart-wrap">
+    ${value}
+    </div>
+    <div class="bar-title">${item.day}</div>
+    `;
+    chart.appendChild(chartChart);
+  });
+});

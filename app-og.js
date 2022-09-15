@@ -1,9 +1,11 @@
-//import Plotly from 'plotly.js-dist';
-window.addEventListener("load", function(){
+import * as plotly from "node_modules/plotly.js-dist/plotly.js";
+/*Resovle new error with this, Uncaught SyntaxError: Cannot use import statement outside a module (at app-og.js:1:1)*/
+
+/*window.addEventListener("load", function(){
     fetch("./data.json").then(function(response){
         response.json().then( function (json) {
-            let chart = document.getElementById("chart");
-            let numbers = json;
+            var chart = document.getElementById("chart");
+            var numbers = json;
 
             
             for (number of numbers) {
@@ -13,19 +15,44 @@ window.addEventListener("load", function(){
 
             ` 
             }
-            let day = document.getElementsByClassName("day");
-            let amount = document.getElementsByClassName("amount");
-            /*iterate through amounts then set amount[i].style.visibility = "hidden"
-            then 
-            amount.addEventListener("mouseover", function(){
-              amount[i].style.visibility = "visible"
-            })
-            amount.addEventListener("mouseleave", function(){
-              amount[i].style.visibility = "hidden"
-            })*/
+            var day = document.getElementsByClassName("day");
+            var amount = document.getElementsByClassName("amount");
+
         });
     })
+})*/
+
+var url = "./data.json";
+
+plotly.d3.json(url, (err, raw) => {
+  
+  var chart = document.getElementById("chart");
+  var x = raw.features.map(f => f.geometry.coordinates[0]);
+  var y = raw.features.map(f => f.geometry.coordinates[1]);
+  var data = [
+    {type: "bar",
+     x: x,
+     y: y,
+     hovertext: "x"}
+  ];
+  var layout = {
+    width: 800,
+    height: 1000,
+    font: {color: 'rgb(147, 134, 123)', family: '"DM Sans", sans-serif', size: 10 },
+    bargap: 0.1,
+    autocolorscale: true,
+    colorscale: {sequential: [[0-1, rgb(236, 119, 95)], [5, rgb(118, 181, 188)]]},
+    hovermode: "closest",
+    hoverlabel: {bgcolor: "rgb(254, 166, 133)"}
+
+  };
+  var config = {
+    responsive: true
+  };
+  Plotly.nrePlot('chart', data, layout, config);
 })
+
+
 
 /* Plotly function:
 var Plotly = require('plotly.js-dist')
