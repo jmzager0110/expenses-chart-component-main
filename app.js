@@ -1,4 +1,4 @@
-const data = fetch('https://raw.githubusercontent.com/jmzager0110/expenses-chart-component-main/master/data.json').then(response => response.json()).then(data => {
+const data = fetch('./data.json').then(response => response.json()).then(data => {
   console.log(data);
   return data;
 })

@@ -72,9 +72,10 @@ body{
 }
 
 .chart-area{
+    display: flex;
+    flex-direction: column;
     background-color: var(--very-pale-orange);
     color: var(--dark-brown);
-    width: auto;
     border-radius: 0.4rem;
 }
 
@@ -90,11 +91,10 @@ body{
     padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
-    display: flex;
     justify-content: space-between;
 }
 
-.chart_chart{
+.chartChart{
     display: flex;
     flex-direction: column;
     height: 12rem;
@@ -111,7 +111,6 @@ body{
 }
 
 .chart-value{
-    
     height: var(--height);
     width: 100%;
     border-radius: 0.25rem;
