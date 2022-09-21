@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
- 
+    gap: 1rem;
 }
 
 .page-container{
@@ -59,7 +59,6 @@ body{
 .balance-amount{
     font-size: var(--larger-font-size);
     font-weight: 700;
-    justify-content: left;
 }
 
 .circle{
@@ -90,7 +89,7 @@ body{
     border-bottom: 0.063rem solid var(--cyan);
     padding-bottom: 2.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -112,6 +111,7 @@ body{
 
 .chart-value{
     height: var(--height);
+    background-color: var(--soft-red);
     width: 100%;
     border-radius: 0.25rem;
 }

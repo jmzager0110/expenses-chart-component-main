@@ -22,6 +22,7 @@ data.then(data => {
     </div>
     <div class="bar-title">${item.day}</div>
     `;
+  
     chart.appendChild(chartChart);
   });
 });

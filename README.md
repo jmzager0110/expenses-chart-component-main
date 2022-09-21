@@ -10,7 +10,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -51,48 +50,25 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom variables
-- Flexbox/Tables/Grid
+- Flexbox
 - Javascript for that JSON though
-
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
 - I really wanted to use Thymeleaf to iterate through the json file; I was really comfortable with Thymeleaf during winter of 2021. If you don't use it, you could lose it.
 - SASS, I spent too much time refactoring & restarting my js script
 - Mobile-first workflow
+- Properly implementing an external source, such as a JavaScript Library
 
 
 ### Useful resources
 
-- [This Solution](https://github.com/dheysonalves/expenses-chart-component) - was interesting because it has no js file at all, their script is just within their index file, no hover state though
-- [Another Solution](https://github.com/JonKohJJ/Expenses-Chart-Component) - used an async function in their js file and only divs in their index file
-- [Yet Another Solution](https://github.com/sumyat-aung/expenses-chart-component) - is described as responsive
+- [This Solution](https://github.com/Vaib215/Expenses-Chart-Component) - had the easiest JavaScript function to follow without using an external source to create the bar chart, I found it on [YouTube](https://www.youtube.com/watch?v=wfbeDrcchNc)
+- [Another Solution](https://github.com/JonKohJJ/Expenses-Chart-Component) - used an async function that I want to try out
 - [This CodePen](https://codepen.io/davidelrizzo/full/dGBpZK/) - is a great example of Table Markup Best Practice
-- [Another Solution](Expenses-chart-component---Frontend-Mentor) - uses a custom table 
-- [This solution](https://github.com/CarolineLienard/Expenses-Chart-Component) - uses a js method "createElement" to display the bars within the chart
-- [Plotly Examples](https://plotly.com/javascript/bar-charts/#bar-chart-with-hover-text) - I decided to use this js library to at least have a "boiler plate" chart
+- [Plotly Examples](https://plotly.com/javascript/bar-charts/#bar-chart-with-hover-text) - I am trying to use this JS Library 
+- [Chart.js](https://www.chartjs.org/)I'm also trying this one because I love to torture myself
+- [Charts.css](https://chartscss.org/) This was recomended by the leader of the Code Challenges, so I should've tried it instead
 
 
 ## Author
