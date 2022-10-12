@@ -22,6 +22,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+<<<<<<< HEAD
+=======
+    gap: 1rem;
+>>>>>>> d9ec3804a68723fa9d7b9e7b762e5758eed095d7
 }
 
 .page-container{
@@ -58,7 +62,10 @@ body{
 .balance-amount{
     font-size: var(--larger-font-size);
     font-weight: 700;
+<<<<<<< HEAD
     margin-left: -6.45rem;
+=======
+>>>>>>> d9ec3804a68723fa9d7b9e7b762e5758eed095d7
 }
 
 .circle{
@@ -114,9 +121,17 @@ body{
   font-size:0.65rem;
 }
 
+<<<<<<< HEAD
 .data{
   width: 1.75rem;
   border-radius: 0.25rem;
+=======
+.chart-value{
+    height: var(--height);
+    background-color: var(--soft-red);
+    width: 100%;
+    border-radius: 0.25rem;
+>>>>>>> d9ec3804a68723fa9d7b9e7b762e5758eed095d7
 }
 
 .data:hover{

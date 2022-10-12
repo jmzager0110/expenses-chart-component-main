@@ -46,6 +46,7 @@ async function fetchData() {
     for (let i=0; i<amounts.length; i++){
       amounts[i].innerHTML = "$" + data[i].amount;
     }
+<<<<<<< HEAD
   }
   fetchData();
   
@@ -60,3 +61,15 @@ async function fetchData() {
       });
   }
   
+=======
+    chartChart.innerHTML = `
+    <div class="chart-wrap">
+    ${value}
+    </div>
+    <div class="bar-title">${item.day}</div>
+    `;
+  
+    chart.appendChild(chartChart);
+  });
+});
+>>>>>>> d9ec3804a68723fa9d7b9e7b762e5758eed095d7
