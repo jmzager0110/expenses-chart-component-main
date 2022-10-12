@@ -6,47 +6,80 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./styles.css">
+<script src="./app.js"></script>
 <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body>
-<div class="page-container">
-    <!--Balance info card-->
-    <div class="content-container">
-    <section class="card">
-      <div class="card-content">
-      <p class="balance-text">My balance</p>
-      <p class="balance-amount">$921.48</p>
-        <div class="circle">
-          <img src="https://raw.githubusercontent.com/jmzager0110/expenses-chart-component-main/master/images/logo.svg" alt="" class="circle-image" />
+  <div class="page-container">
+      <!--Balance info card-->
+      <div class="content-container">
+      <section class="card">
+        <div class="card-content">
+        <p class="balance-text">My balance</p>
+        <p class="balance-amount">$921.48</p>
+          <div class="circle">
+            <img src="images/logo.svg" />
+          </div>
         </div>
-      </div>
-     </section>
-      
-    <section class="chart-area">
-      <p class="chart-title">Spending - Last 7 days</p>
-      <div id="chart">
+       </section>
         
-      <!--data-->
-      </div>
-      <script src="app.js"></script>
-      <div class="chart-footer">
-        <div class="left">
-        <p class="total-left">Total this month</p>
-        <h3 class="total-left-amount">$478.33</h3>
+      <section class="chart-area">
+        <p class="chart-title">Spending - Last 7 days</p>
+        <div id="chart">
+          <div class="bar">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day"></div>
+          </div>
+                  <div class="bar">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day"></div>
+          </div>
+                  <div class="bar">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day"></div>
+          </div>
+                  <div class="bar">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day"></div>
+          </div>
+                  <div class="bar">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day"></div>
+          </div>
+                  <div class="bar">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day"></div>
+          </div>
+                  <div class="bar">
+            <div class="amount"></div>
+            <div class="data"></div>
+            <div class="day"></div>
+          </div>
         </div>
-        <div class="right">
-        <p class="total-right-amount">+2.4%</p>
-        <p class="total-right">from last month</p>
+        <div class="chart-footer">
+          <div class="left">
+          <p class="total-left">Total this month</p>
+          <h3 class="total-left-amount">$478.33</h3>
+          </div>
+          <div class="right">
+          <p class="total-right-amount">+2.4%</p>
+          <p class="total-right">from last month</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <footer class="attribution"><p>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by Miniature Jay-Z.</p>
+    </footer>
   </div>
-  <footer class="attribution"><p>
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  Coded by Miniature Jay-Z.</p>
-  </footer>
-</div>
-</body>
+  </body>
 </html>
